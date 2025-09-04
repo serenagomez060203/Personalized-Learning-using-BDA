@@ -35,7 +35,6 @@ Additional transformations:
 ## Sample Data & Clustering Results
 
 ### Schema Preview:
-root
 |-- student_id: string (nullable = true)
 |-- gender: string (nullable = true)
 |-- study_time: string (nullable = true)
@@ -64,8 +63,3 @@ root
 | STUDENT_4  | [Basic Algebra Book, Introductory Algebra Video] |
 | STUDENT_5  | [Basic Algebra Book, Introductory Algebra Video] |
 
----
-
-## Conclusion
-
-This project demonstrates the application of PySpark for analyzing and clustering student performance data. By utilizing KMeans clustering, students are grouped based on their study habits and grades, allowing for personalized learning recommendations. The results offer valuable insights into patterns of student performance, with recommendations tailored to each cluster. The use of distributed computing with PySpark ensures scalability for larger datasets, while the visualizations provide a clear understanding of the clustering results. This approach highlights the potential of data-driven educational tools for enhancing personalized learning experiences.
