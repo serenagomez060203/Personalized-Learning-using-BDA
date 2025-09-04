@@ -1,7 +1,5 @@
 # Personalized Learning using Big Data Analytics
 
-## Abstract
-
 This project leverages PySpark to develop a personalized learning system based on student performance data. The dataset includes variables such as student ID, gender, study time, and grades (G1, G2, G3). Using Spark’s capabilities, the dataset is first cleaned and processed, with missing values handled through imputation. Feature engineering is applied to calculate an average grade and encode categorical features like gender and study time.
 
 KMeans clustering is utilized to group students into clusters based on their performance. These clusters are then used to provide personalized learning resource recommendations. The project concludes with a visual analysis of the clustering results, demonstrating patterns in student performance and offering tailored learning materials for each group. This approach showcases the potential of data-driven, personalized educational experiences aimed at improving student outcomes.
@@ -37,6 +35,7 @@ Additional transformations:
 ## Sample Data & Clustering Results
 
 ### Schema Preview:
+root
 |-- student_id: string (nullable = true)
 |-- gender: string (nullable = true)
 |-- study_time: string (nullable = true)
@@ -67,20 +66,6 @@ Additional transformations:
 
 ---
 
-## Visualization
-
-![KMeans Clustering Visualization](clustering_plot.png)
-
-*Scatter plot showing student clusters based on grades (G1 vs G2).*
-
----
-
 ## Conclusion
 
 This project demonstrates the application of PySpark for analyzing and clustering student performance data. By utilizing KMeans clustering, students are grouped based on their study habits and grades, allowing for personalized learning recommendations. The results offer valuable insights into patterns of student performance, with recommendations tailored to each cluster. The use of distributed computing with PySpark ensures scalability for larger datasets, while the visualizations provide a clear understanding of the clustering results. This approach highlights the potential of data-driven educational tools for enhancing personalized learning experiences.
-
----
-
-## Tags
-
-#PySpark #BigData #DataAnalytics #MachineLearning #KMeans #PersonalizedLearning #Education #Clustering #DataVisualization #Python #Jupyter #Colab #StudentPerformance #FeatureEngineering #DistributedComputing
